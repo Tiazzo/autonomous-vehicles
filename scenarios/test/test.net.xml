@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-11-18 11:14:00 by Eclipse SUMO netedit Version 1.21.0
+<neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumocfg-file value="G:\Programming\School\dat295\test\test.sumocfg"/>
+        <sumo-net-file value="G:\Programming\School\dat295\test\test.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="G:\Programming\School\dat295\test\test.net.xml"/>
+    </output>
+
+    <processing>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+    <netedit>
+        <new-network value="false"/>
+    </netedit>
+
+</neteditConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,-100.00,400.00,0.00" origBoundary="10000000000.00,10000000000.00,-10000000000.00,-10000000000.00" projParameter="!"/>
+
+    <edge id=":J4_0" function="internal">
+        <lane id=":J4_0_0" index="0" allow="private emergency authority vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle" speed="20.36" length="15.06" shape="201.64,-4.80 206.33,-5.24 209.76,-6.37 212.63,-7.92 215.66,-9.62"/>
+    </edge>
+    <edge id=":J4_1" function="internal">
+        <lane id=":J4_1_0" index="0" allow="private emergency authority vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle" speed="22.22" length="15.16" shape="201.64,-4.80 216.80,-4.80"/>
+        <lane id=":J4_1_1" index="1" allow="private emergency authority vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle" speed="22.22" length="15.16" shape="201.64,-1.60 216.80,-1.60"/>
+    </edge>
+
+    <edge id="E0" from="J3" to="J4" priority="-1">
+        <lane id="E0_0" index="0" allow="private emergency authority vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle" speed="22.22" length="501.64" shape="0.00,-4.80 201.64,-4.80"/>
+        <lane id="E0_1" index="1" allow="private emergency authority vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle" speed="22.22" length="501.64" shape="0.00,-1.60 201.64,-1.60"/>
+    </edge>
+    <edge id="E1" from="J4" to="J5" priority="-1">
+        <lane id="E1_0" index="0" allow="private emergency authority vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle" speed="22.22" length="183.20" shape="216.80,-4.80 400.00,-4.80"/>
+        <lane id="E1_1" index="1" allow="private emergency authority vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle" speed="22.22" length="183.20" shape="216.80,-1.60 400.00,-1.60"/>
+    </edge>
+    <edge id="E2" from="J4" to="J6" priority="-1">
+        <lane id="E2_0" index="0" allow="private emergency authority vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle" speed="22.22" length="205.30" shape="215.66,-9.62 399.28,-101.43"/>
+    </edge>
+
+    <junction id="J3" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-6.40"/>
+    <junction id="J4" type="priority" x="200.00" y="0.00" incLanes="E0_0 E0_1" intLanes=":J4_0_0 :J4_1_0 :J4_1_1" shape="216.80,0.00 216.80,-6.40 216.38,-8.19 214.95,-11.05 212.26,-9.61 210.26,-8.44 208.57,-7.54 206.82,-6.91 204.64,-6.53 201.64,-6.40 201.64,0.00">
+        <request index="0" response="000" foes="000" cont="0"/>
+        <request index="1" response="000" foes="000" cont="0"/>
+        <request index="2" response="000" foes="000" cont="0"/>
+    </junction>
+    <junction id="J5" type="dead_end" x="400.00" y="0.00" incLanes="E1_0 E1_1" intLanes="" shape="400.00,-6.40 400.00,0.00"/>
+    <junction id="J6" type="dead_end" x="400.00" y="-100.00" incLanes="E2_0" intLanes="" shape="398.57,-102.86 400.00,-100.00"/>
+
+    <connection from="E0" to="E2" fromLane="0" toLane="0" via=":J4_0_0" dir="R" state="M"/>
+    <connection from="E0" to="E1" fromLane="0" toLane="0" via=":J4_1_0" dir="s" state="M"/>
+    <connection from="E0" to="E1" fromLane="1" toLane="1" via=":J4_1_1" dir="s" state="M"/>
+
+    <connection from=":J4_0" to="E2" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":J4_1" to="E1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J4_1" to="E1" fromLane="1" toLane="1" dir="s" state="M"/>
+
+</net>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-12-17 17:34:09 by Eclipse SUMO netedit Version 1.21.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="bus" length="12.00" maxSpeed="22.22" color="green" accel="1.5" decel="4.0" sigma="0.5"/>
+    <vType id="car" length="5.00" maxSpeed="33.33" color="yellow"  accel="2.6" decel="4.5" sigma="0.5"/>
+    <vType id="Ego_veh" length="4.50" maxSpeed="33.33" color="red" accel="2.6" decel="4.5"/>
+    <vType id="motorcycle" length="2.50" maxSpeed="40.00" color="blue" accel="3.0" decel="5.0" sigma="0.3"/>
+    <vType id="trailer" vClass="trailer"  maxSpeed="30" speedFactor="1" speedDev="0.05" />
+    <vType id="coach" vClass="coach"  maxSpeed="30" speedFactor="1" speedDev="0.05" />
+    <!-- Routes -->
+    <route id="ego_route" edges="E main offramp"/>
+    <route id="main_route" edges="E main Exit"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="medium_1" type="car" begin="0.00" departLane="1" route="main_route" end="1000.00" vehsPerHour="2000"/>
+    <flow id="medium_2" type="bus" begin="10.00" departLane="2" route="main_route" end="500.00" vehsPerHour="400"/>
+    <flow id="medium_3" type="motorcycle" begin="20.00" departLane="1" route="main_route" end="500.00" vehsPerHour="500"/>
+    <flow id="trailer" type="trailer" begin="30.00" departLane="random" route="main_route" end="500.00" number="400"/>
+    <flow id="coach" type="coach" begin="40.00" departLane="0" route="main_route" end="500.00" number="300"/>
+
+    <vehicle depart="130" id="Ego" type="Ego_veh" departLane="3" departSpeed="avg" route="ego_route" arrivalLane="0"/>
+</routes>

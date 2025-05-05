@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file value="network.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+        <step-length value="1.0"/>
+    </time>
+    <gui_only>
+        <start position="0,0"/>
+    </gui_only>
+
+    <lateral-resolution value="0.8"/>
+</configuration>

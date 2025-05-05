@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <!-- Vehicle Type Definitions -->
+    <vType id="car" 
+           length="5.0" 
+           accel="2.0" 
+           decel="5.0" 
+           sigma="0.0" 
+           maxSpeed="70.0" 
+           color="1,0,0" />
+    
+    <!-- Route Definitions -->
+    
+    <!-- Route for veh_rmp: Takes the exit ramp -->
+    <route id="route_hwy" edges="highway" />
+    
+    <!-- Vehicle Definitions -->
+    <vehicle depart="0" 
+             id="veh_hwy" 
+             type="car" 
+             route="route_hwy" 
+             departLane="0" 
+             departSpeed="0" />
+</routes>

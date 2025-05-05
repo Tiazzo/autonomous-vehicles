@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-01-06 12:01:11 by Eclipse SUMO GUI Version 1.21.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="scenarios\ScenarioB\hello.net.xml"/>
+        <route-files value="scenarios\ScenarioB\hello.rou.xml"/>
+    </input>
+
+    <output>
+        <amitran-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/trajectories.xml"/>
+        <tripinfo-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/Trip_data_Ego_vehicle.xml"/>
+        <lanechange-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/lane_change_output.xml"/>
+        <collision-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/collision_Ego_vehicle.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+    <report>
+        <log value="sumo_log.txt"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="55085"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="scenarios\ScenarioB\hello.settings.xml"/>
+        <delay value="500"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<lanechanges>
+    <change id="flow1.0" type="Car" time="1.00" from="1to2_0" to="1to2_1" dir="1" speed="0.78" pos="5.38" reason="speedGain" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.0" type="Car" time="2.00" from="1to2_1" to="1to2_2" dir="1" speed="1.74" pos="7.11" reason="speedGain" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.0" type="Car" time="4.00" from="1to2_2" to="1to2_3" dir="1" speed="3.49" pos="13.15" reason="speedGain" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow2.0" type="Truck" time="12.00" from="1to2_1" to="1to2_2" dir="1" speed="1.58" pos="14.28" reason="speedGain" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.1" type="Car" time="21.00" from="1to2_0" to="1to2_1" dir="1" speed="0.70" pos="5.30" reason="speedGain" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.0" type="Car" time="39.00" from="1to2_3" to="1to2_2" dir="-1" speed="29.37" pos="607.64" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="271.99" followerSecureGap="0.00" followerSpeed="20.32" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow2.1" type="Truck" time="41.00" from="1to2_1" to="1to2_0" dir="-1" speed="3.80" pos="25.70" reason="keepRight" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="8.20" followerSecureGap="0.90" followerSpeed="0.90" origLeaderGap="159.08" origLeaderSecureGap="0.00" origLeaderSpeed="16.84"/>
+    <change id="flow1.0" type="Car" time="49.00" from="1to2_2" to="1to2_1" dir="-1" speed="29.03" pos="898.81" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="542.24" followerSecureGap="0.00" followerSpeed="23.22" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow2.1" type="Truck" time="52.00" from="1to2_0" to="1to2_1" dir="1" speed="10.59" pos="109.88" reason="speedGain" leaderGap="309.05" leaderSecureGap="0.00" leaderSpeed="23.76" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow3.0" type="Bus" time="55.00" from="1to2_2" to="1to2_3" dir="1" speed="3.59" pos="22.97" reason="speedGain" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="698.91" origLeaderSecureGap="0.00" origLeaderSpeed="27.07"/>
+    <change id="flow1.2" type="Car" time="58.00" from="1to2_0" to="1to2_1" dir="1" speed="11.00" pos="127.56" reason="speedGain" leaderGap="47.50" leaderSecureGap="3.99" leaderSpeed="14.51" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow2.1" type="Truck" time="63.00" from="1to2_1" to="1to2_2" dir="1" speed="17.37" pos="268.66" reason="speedGain" leaderGap="671.75" leaderSecureGap="0.00" leaderSpeed="27.18" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="412.00" origLeaderSecureGap="0.00" origLeaderSpeed="23.71"/>
+    <change id="flow1.0" type="Car" time="65.00" from="2to3_1" to="2to3_0" dir="-1" speed="23.42" pos="261.88" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow2.0" type="Truck" time="72.00" from="2to3_2" to="2to3_1" dir="-1" speed="27.25" pos="187.53" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow3.0" type="Bus" time="77.00" from="1to2_3" to="1to2_2" dir="-1" speed="18.57" pos="268.77" reason="keepRight" leaderGap="290.73" leaderSecureGap="0.00" leaderSpeed="24.92" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow3.0" type="Bus" time="84.00" from="1to2_2" to="1to2_3" dir="1" speed="24.06" pos="420.88" reason="speedGain" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="326.55" origLeaderSecureGap="9.84" origLeaderSpeed="27.09"/>
+    <change id="flow2.2" type="Truck" time="87.00" from="1to2_1" to="1to2_2" dir="1" speed="17.77" pos="262.35" reason="speedGain" leaderGap="567.07" leaderSecureGap="0.00" leaderSpeed="27.09" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="352.55" origLeaderSecureGap="16.78" origLeaderSpeed="18.09"/>
+    <change id="flow1.3" type="Car" time="87.00" from="1to2_0" to="1to2_1" dir="1" speed="12.43" pos="250.14" reason="speedGain" leaderGap="364.76" leaderSecureGap="0.00" leaderSpeed="18.09" followerGap="95.22" followerSecureGap="13.81" followerSpeed="12.89" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.1" type="Car" time="87.00" from="2to3_1" to="2to3_0" dir="-1" speed="23.94" pos="245.44" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow3.2" type="Bus" time="94.00" from="1to2_3" to="1to2_2" dir="-1" speed="6.30" pos="42.08" reason="keepRight" leaderGap="354.05" leaderSecureGap="0.00" leaderSpeed="22.63" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="641.82" origLeaderSecureGap="0.00" origLeaderSpeed="30.38"/>
+    <change id="flow3.1" type="Bus" time="95.00" from="1to2_1" to="1to2_2" dir="1" speed="18.28" pos="277.80" reason="strategic" leaderGap="141.76" leaderSecureGap="0.00" leaderSpeed="23.42" followerGap="216.84" followerSecureGap="0.00" followerSpeed="6.88" origLeaderGap="93.90" origLeaderSecureGap="18.22" origLeaderSpeed="18.30"/>
+    <change id="flow2.1" type="Truck" time="100.00" from="2to3_2" to="2to3_1" dir="-1" speed="27.36" pos="185.58" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.4" type="Car" time="100.00" from="1to2_0" to="1to2_1" dir="1" speed="14.58" pos="159.78" reason="speedGain" leaderGap="312.32" leaderSecureGap="0.00" leaderSpeed="20.56" followerGap="44.12" followerSecureGap="4.42" followerSpeed="11.20" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.4" type="Car" time="105.00" from="1to2_1" to="1to2_2" dir="1" speed="18.01" pos="243.46" reason="speedGain" leaderGap="241.77" leaderSecureGap="0.00" leaderSpeed="23.21" followerGap="81.88" followerSecureGap="4.06" followerSpeed="14.36" origLeaderGap="331.58" origLeaderSecureGap="9.98" origLeaderSpeed="20.51"/>
+    <change id="flow3.0" type="Bus" time="107.00" from="2to3_3" to="2to3_2" dir="-1" speed="34.17" pos="123.62" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.5" type="Car" time="119.00" from="1to2_0" to="1to2_1" dir="1" speed="13.57" pos="140.56" reason="speedGain" leaderGap="294.10" leaderSecureGap="0.00" leaderSpeed="22.37" followerGap="70.23" followerSecureGap="0.00" followerSpeed="8.54" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow3.3" type="Bus" time="123.00" from="1to2_3" to="1to2_2" dir="-1" speed="13.90" pos="151.73" reason="keepRight" leaderGap="378.48" leaderSecureGap="0.00" leaderSpeed="27.28" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow2.4" type="Truck" time="123.00" from="1to2_1" to="1to2_0" dir="-1" speed="11.53" pos="107.84" reason="keepRight" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="87.65" followerSecureGap="0.00" followerSpeed="1.86" origLeaderGap="89.61" origLeaderSecureGap="0.00" origLeaderSpeed="16.56"/>
+    <change id="flow2.4" type="Truck" time="124.00" from="1to2_0" to="1to2_1" dir="1" speed="11.99" pos="119.83" reason="strategic" leaderGap="95.04" leaderSecureGap="0.00" leaderSpeed="17.42" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.2" type="Car" time="125.00" from="2to3_1" to="2to3_0" dir="-1" speed="18.18" pos="301.42" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow2.2" type="Truck" time="128.00" from="2to3_2" to="2to3_1" dir="-1" speed="24.59" pos="223.36" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="169.30" followerSecureGap="3.83" followerSpeed="20.44" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow1.4" type="Car" time="129.00" from="1to2_2" to="1to2_1" dir="-1" speed="30.21" pos="872.41" reason="strategic|urgent" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="196.77" followerSecureGap="0.00" followerSpeed="22.66" origLeaderGap="None" origLeaderSecureGap="None" origLeaderSpeed="None"/>
+    <change id="flow3.3" type="Bus" time="129.00" from="1to2_2" to="1to2_3" dir="1" speed="17.88" pos="248.91" reason="speedGain" leaderGap="None" leaderSecureGap="None" leaderSpeed="None" followerGap="194.93" followerSecureGap="0.00" followerSpeed="6.36" origLeaderGap="453.78" origLeaderSecureGap="0.00" origLeaderSpeed="28.83"/>
+    <change id="flow3.4" type="Bus" time="131.00" from="1to2_3" to="1to2_2" dir="-1" speed="7.72" pos="56.52" reason="keepRight" leaderGap="703.44" leaderSecureGap="0.00" leaderSpeed="28.58" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="218.45" origLeaderSecureGap="0.00" origLeaderSpeed="19.25"/>
+    <change id="Ego" type="Ego_veh" time="131.00" from="1to2_3" to="1to2_2" dir="-1" speed="2.00" pos="6.60" reason="traci|urgent" leaderGap="37.92" leaderSecureGap="0.00" leaderSpeed="7.72" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="268.37" origLeaderSecureGap="0.00" origLeaderSpeed="19.25"/>
+    <change id="Ego" type="Ego_veh" time="132.00" from="1to2_2" to="1to2_1" dir="-1" speed="4.00" pos="10.60" reason="traci|urgent" leaderGap="212.77" leaderSecureGap="0.00" leaderSpeed="16.60" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="42.63" origLeaderSecureGap="0.30" origLeaderSpeed="8.70"/>
+    <change id="Ego" type="Ego_veh" time="133.00" from="1to2_1" to="1to2_0" dir="-1" speed="6.00" pos="16.60" reason="traci|urgent" leaderGap="47.11" leaderSecureGap="2.51" leaderSpeed="9.49" followerGap="None" followerSecureGap="None" followerSpeed="None" origLeaderGap="224.13" origLeaderSecureGap="0.00" origLeaderSpeed="17.35"/>
+</lanechanges>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-12-17 17:34:09 by Eclipse SUMO netedit Version 1.21.0
+<neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumocfg-file value="C:\Users\ganas\PycharmProjects\sumo\hdmf.sumocfg"/>
+        <additional-files value="C:\Users\ganas\PycharmProjects\sumo\hdmf.add.xml"/>
+        <route-files value="C:\Users\ganas\PycharmProjects\sumo\hdmf.rou.xml"/>
+        <sumo-net-file value="C:\Users\ganas\PycharmProjects\sumo\hdmf.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\ganas\PycharmProjects\sumo\hdmf.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</neteditConfiguration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-0.77,-99.58,2001.65,1.31" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id="E" from="J0" to="J7" priority="-1">
+        <lane id="E_0" index="0" speed="13.89" length="183.69" shape="0.00,-11.20 170.19,-11.20"/>
+        <lane id="E_1" index="1" speed="22.22" length="183.69" shape="0.00,-8.00 170.19,-8.00"/>
+        <lane id="E_2" index="2" speed="27.78" length="183.69" shape="0.00,-4.80 170.19,-4.80"/>
+        <lane id="E_3" index="3" speed="33.33" length="183.69" shape="0.00,-1.60 170.19,-1.60"/>
+    </edge>
+    <edge id="Exit" from="J8" to="J2" priority="-1" shape="1744.14,1.31 2000.00,0.00">
+        <lane id="Exit_0" index="0" speed="13.89" length="255.55" shape="1776.06,-10.05 1999.94,-11.20"/>
+        <lane id="Exit_1" index="1" speed="22.22" length="255.55" shape="1776.08,-6.85 1999.96,-8.00"/>
+        <lane id="Exit_2" index="2" speed="27.78" length="255.55" shape="1776.09,-3.65 1999.98,-4.80"/>
+        <lane id="Exit_3" index="3" speed="33.33" length="255.55" shape="1776.11,-0.45 1999.99,-1.60"/>
+    </edge>
+    <edge id="main" from="J7" to="J8" priority="-1" shape="200.00,0.00 1744.14,1.31">
+        <lane id="main_0" index="0" speed="13.89" length="1574.55" shape="185.36,-11.21 1744.15,-9.89"/>
+        <lane id="main_1" index="1" speed="22.22" length="1574.55" shape="185.36,-8.01 1744.15,-6.69"/>
+        <lane id="main_2" index="2" speed="27.78" length="1574.55" shape="185.36,-4.81 1744.14,-3.49"/>
+        <lane id="main_3" index="3" speed="33.33" length="1574.55" shape="185.35,-1.61 1744.14,-0.29"/>
+    </edge>
+    <edge id="offramp" from="J8" to="J10" priority="-1" shape="1744.47,0.00 1744.58,-0.33 1744.76,-0.67 1745.00,-1.01 1745.30,-1.35 1745.67,-1.70 1746.09,-2.05 1746.57,-2.40 1747.11,-2.76 1747.71,-3.12 1748.36,-3.49 1749.08,-3.86 1749.84,-4.23 1750.66,-4.61 1751.54,-4.99 1752.46,-5.37 1753.44,-5.75 1754.47,-6.14 1755.55,-6.53 1756.68,-6.92 1757.86,-7.32 1759.08,-7.71 1760.36,-8.11 1761.67,-8.51 1763.04,-8.92 1764.45,-9.32 1765.90,-9.73 1767.39,-10.14 1768.93,-10.55 1770.51,-10.96 1772.12,-11.38 1773.78,-11.79 1775.48,-12.21 1777.21,-12.63 1778.98,-13.05 1780.79,-13.47 1782.63,-13.89 1784.51,-14.31 1786.42,-14.73 1788.36,-15.15 1790.33,-15.58 1792.34,-16.00 1794.38,-16.43 1796.44,-16.85 1798.54,-17.27 1800.66,-17.70 1802.81,-18.12 1804.98,-18.55 1807.19,-18.97 1809.41,-19.39 1811.66,-19.82 1813.93,-20.24 1816.23,-20.66 1818.54,-21.08 1820.88,-21.50 1823.23,-21.92 1825.61,-22.34 1828.00,-22.75 1830.41,-23.17 1832.83,-23.58 1835.27,-24.00 1837.73,-24.41 1840.20,-24.82 1842.68,-25.22 1845.17,-25.63 1847.68,-26.03 1850.19,-26.43 1852.72,-26.83 1855.25,-27.23 1857.79,-27.63 1860.34,-28.02 1862.90,-28.41 1865.46,-28.79 1868.02,-29.18 1870.59,-29.56 1873.17,-29.94 1875.74,-30.31 1878.32,-30.68 1880.89,-31.05 1883.47,-31.42 1886.04,-31.78 1888.62,-32.14 1891.19,-32.49 1893.75,-32.85 1896.32,-33.19 1898.87,-33.54 1901.42,-33.87 1903.97,-34.21 1906.50,-34.54 1909.03,-34.87 1911.55,-35.19 1914.05,-35.51 1916.55,-35.82 1919.04,-36.13 1921.51,-36.43 1923.97,-36.73 1926.41,-37.02 1928.84,-37.31 1931.25,-37.59 1933.65,-37.87 1936.02,-38.14 1938.38,-38.41 1940.72,-38.67 1943.04,-38.92 1945.34,-39.17 1947.62,-39.41 1949.87,-39.65 1952.10,-39.88 1954.31,-40.11 1956.49,-40.33 1958.65,-40.54 1960.77,-40.74 1962.87,-40.94 1964.95,-41.13 1966.99,-41.32 1969.00,-41.50 1970.98,-41.67 1972.93,-41.83 1974.85,-41.99 1976.73,-42.14 1978.58,-42.28 1980.40,-42.42 1982.18,-42.54 1983.92,-42.66 1985.62,-42.78 1987.29,-42.88 1988.92,-42.98 1990.50,-43.06 1992.05,-43.14 1993.55,-43.21 1995.01,-43.28 1996.43,-43.33 1997.80,-43.38 1999.13,-43.41 2000.41,-43.44 2001.65,-43.46">
+        <lane id="offramp_0" index="0" speed="13.89" length="261.89" shape="1774.04,-13.50 1775.10,-13.76 1776.84,-14.19 1778.61,-14.61 1780.43,-15.03 1782.28,-15.45 1784.16,-15.87 1786.08,-16.29 1788.02,-16.71 1790.00,-17.14 1792.01,-17.57 1794.06,-18.00 1796.12,-18.42 1798.22,-18.84 1800.35,-19.27 1802.50,-19.69 1804.68,-20.12 1806.89,-20.54 1809.11,-20.96 1811.36,-21.39 1813.64,-21.81 1815.94,-22.23 1818.26,-22.65 1820.60,-23.07 1822.95,-23.50 1825.34,-23.92 1827.73,-24.33 1830.14,-24.75 1832.56,-25.16 1835.00,-25.58 1837.47,-25.99 1839.94,-26.40 1842.42,-26.80 1844.91,-27.21 1847.43,-27.61 1849.94,-28.01 1852.47,-28.41 1855.00,-28.81 1857.54,-29.21 1860.10,-29.60 1862.66,-29.99 1865.22,-30.37 1867.78,-30.76 1870.36,-31.14 1872.94,-31.52 1875.51,-31.89 1878.09,-32.26 1880.66,-32.63 1883.25,-33.00 1885.82,-33.36 1888.40,-33.73 1890.97,-34.07 1893.53,-34.44 1896.11,-34.78 1898.66,-35.13 1901.21,-35.46 1903.76,-35.80 1906.29,-36.13 1908.83,-36.46 1911.35,-36.78 1913.85,-37.10 1916.35,-37.41 1918.84,-37.72 1921.32,-38.02 1923.78,-38.32 1926.22,-38.61 1928.65,-38.90 1931.06,-39.18 1933.47,-39.46 1935.84,-39.73 1938.20,-40.00 1940.55,-40.26 1942.87,-40.51 1945.17,-40.76 1947.45,-41.00 1949.70,-41.24 1951.94,-41.47 1954.15,-41.70 1956.33,-41.92 1958.50,-42.13 1960.62,-42.33 1962.72,-42.53 1964.80,-42.72 1966.84,-42.91 1968.86,-43.09 1970.85,-43.26 1972.80,-43.42 1974.72,-43.58 1976.61,-43.74 1978.46,-43.88 1980.28,-44.02 1982.07,-44.14 1983.81,-44.26 1985.52,-44.38 1987.19,-44.48 1988.83,-44.58 1990.42,-44.66 1991.97,-44.74 1993.47,-44.81 1994.94,-44.88 1996.37,-44.93 1997.75,-44.98 1999.09,-45.01 2000.38,-45.04 2001.62,-45.06"/>
+    </edge>
+    <edge id="onramp" from="J3" to="J7" priority="1" type="dead">
+        <lane id="onramp_0" index="0" speed="13.89" length="198.24" shape="-0.06,-101.01 171.32,-16.01"/>
+    </edge>
+
+    <junction id="J0" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-12.80"/>
+    <junction id="J1" type="dead_end" x="2000.00" y="0.00" incLanes="" intLanes="" shape="2000.00,0.00"/>
+    <junction id="J10" type="dead_end" x="2001.65" y="-43.46" incLanes="offramp_0" intLanes="" shape="2001.60,-46.66 2001.65,-43.46"/>
+    <junction id="J2" type="dead_end" x="2000.00" y="0.00" incLanes="Exit_0 Exit_1 Exit_2 Exit_3" intLanes="" shape="1999.93,-12.80 2000.00,0.00"/>
+    <junction id="J3" type="dead_end" x="-0.77" y="-99.58" incLanes="" intLanes="" shape="-0.77,-99.58 0.65,-102.45"/>
+    <junction id="J7" type="priority" x="200.00" y="0.00" incLanes="onramp_0 E_0 E_1 E_2 E_3" intLanes="" shape="185.35,-0.01 185.36,-12.81 182.36,-12.94 180.18,-13.32 178.42,-13.95 176.73,-14.85 174.72,-16.01 172.03,-17.44 170.61,-14.58 170.19,-12.80 170.19,0.00">
+        <request index="0" response="00000" foes="11110"/>
+        <request index="1" response="00001" foes="00001"/>
+        <request index="2" response="00001" foes="00001"/>
+        <request index="3" response="00001" foes="00001"/>
+        <request index="4" response="00001" foes="00001"/>
+    </junction>
+    <junction id="J8" type="priority" x="1744.47" y="0.00" incLanes="main_0 main_1 main_2 main_3" intLanes="" shape="1776.12,1.15 1776.05,-11.65 1775.97,-12.33 1772.11,-14.67 1766.28,-13.27 1761.92,-12.35 1758.29,-11.81 1754.62,-11.56 1750.16,-11.49 1744.15,-11.49 1744.14,1.31">
+        <request index="0" response="00000" foes="00000"/>
+        <request index="1" response="00000" foes="00000"/>
+        <request index="2" response="00000" foes="00000"/>
+        <request index="3" response="00000" foes="00000"/>
+        <request index="4" response="00000" foes="00000"/>
+    </junction>
+
+    <connection from="E" to="main" fromLane="0" toLane="0" dir="s" state="m"/>
+    <connection from="E" to="main" fromLane="1" toLane="1" dir="s" state="m"/>
+    <connection from="E" to="main" fromLane="2" toLane="2" dir="s" state="m"/>
+    <connection from="E" to="main" fromLane="3" toLane="3" dir="s" state="m"/>
+    <connection from="main" to="offramp" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from="main" to="Exit" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from="main" to="Exit" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from="main" to="Exit" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from="main" to="Exit" fromLane="3" toLane="3" dir="s" state="M"/>
+    <connection from="onramp" to="main" fromLane="0" toLane="0" pass="1" dir="s" state="M"/>
+
+</net>

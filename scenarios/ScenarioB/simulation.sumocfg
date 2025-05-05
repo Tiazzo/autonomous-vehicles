@@ -1,0 +1,24 @@
+<configuration>
+    <input>
+        <net-file value="hello.net.xml"/>
+        <route-files value="hello.rou.xml"/>
+        <gui-settings-file value="hello.settings.xml"/>
+    </input>
+    <output>
+        <lanechange-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/lane_change_output.xml"/> <!-- Enter your file location-->
+        <amitran-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/trajectories.xml"/> <!-- Enter your file location-->
+        <collision-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/collision_Ego_vehicle.xml"/> <!-- Enter your file location-->
+        <tripinfo-output  value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/Trip_data_Ego_vehicle.xml"/> <!-- Enter your file location-->
+    </output>
+
+
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+    <lateral-resolution value="0.8"/>
+</configuration>
+
+

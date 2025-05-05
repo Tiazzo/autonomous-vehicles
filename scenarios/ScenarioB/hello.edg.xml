@@ -1,0 +1,18 @@
+<edges>
+    
+    <edge from="1" id="1to2" to="2" numLanes="4">
+        <lane index="0" speed="13.69" />
+        <lane index="1" speed="22.22" />
+        <lane index="2" speed="27.78"/>
+        <lane index="3" speed="33.33" />
+    </edge>
+    <edge from="2" id="2to3" to="3" numLanes="4">
+         <lane index="0" speed="13.69" />
+         <lane index="1" speed="22.22" />
+         <lane index="2" speed="27.78"/>
+         <lane index="3" speed="33.33" />
+    </edge>
+    <edge from="2" id="exit" to="4" numLanes="2">
+    </edge>
+
+</edges>

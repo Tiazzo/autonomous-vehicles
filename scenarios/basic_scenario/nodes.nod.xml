@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <!-- Start of the Highway -->
+    <node id="hwy_start" x="0.0" y="0.0" />
+    
+    <!-- End of the Highway's Left Lane -->
+    <node id="hwy_end" x="100.0" y="0.0" />
+</nodes>

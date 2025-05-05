@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges>
+    <edge id="highway" from="hwy_start" to="hwy_end" lanes="3" />
+</edges>

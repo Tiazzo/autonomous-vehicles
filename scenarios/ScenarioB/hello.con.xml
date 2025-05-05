@@ -1,0 +1,12 @@
+<connections>
+    <!-- Highway connections -->
+    <connection from="1to2" to="2to3" fromLane="0" toLane="0" />
+    <connection from="1to2" to="2to3" fromLane="1" toLane="1" />
+    <connection from="1to2" to="2to3" fromLane="2" toLane="2" />
+    <connection from="1to2" to="2to3" fromLane="3" toLane="3" />
+    
+    <!-- Exit connection -->
+    <connection from="1to2" to="exit" fromLane="3" toLane="0" />
+</connections>
+
+

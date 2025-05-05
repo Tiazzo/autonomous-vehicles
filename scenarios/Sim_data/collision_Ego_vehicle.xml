@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-01-06 12:01:11 by Eclipse SUMO GUI Version 1.21.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="scenarios\ScenarioB\hello.net.xml"/>
+        <route-files value="scenarios\ScenarioB\hello.rou.xml"/>
+    </input>
+
+    <output>
+        <amitran-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/trajectories.xml"/>
+        <tripinfo-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/Trip_data_Ego_vehicle.xml"/>
+        <lanechange-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/lane_change_output.xml"/>
+        <collision-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/collision_Ego_vehicle.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+    <report>
+        <log value="sumo_log.txt"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="55085"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="scenarios\ScenarioB\hello.settings.xml"/>
+        <delay value="500"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<collisions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/collision_file.xsd">
+</collisions>

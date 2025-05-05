@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-01-06 12:01:11 by Eclipse SUMO GUI Version 1.21.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="scenarios\ScenarioB\hello.net.xml"/>
+        <route-files value="scenarios\ScenarioB\hello.rou.xml"/>
+    </input>
+
+    <output>
+        <amitran-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/trajectories.xml"/>
+        <tripinfo-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/Trip_data_Ego_vehicle.xml"/>
+        <lanechange-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/lane_change_output.xml"/>
+        <collision-output value="C:/Users/It/Documents/GitHub/LCDM-AutonomousVehicles/scenarios/Sim_data/collision_Ego_vehicle.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+    <report>
+        <log value="sumo_log.txt"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="55085"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="scenarios\ScenarioB\hello.settings.xml"/>
+        <delay value="500"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="flow1.0" depart="0.00" departLane="1to2_0" departPos="4.60" departSpeed="0.00" departDelay="0.00" arrival="81.00" arrivalLane="2to3_0" arrivalPos="489.33" arrivalSpeed="14.02" duration="81.00" routeLength="1495.40" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="21.79" rerouteNo="0" devices="tripinfo_flow1.0" vType="Car" speedFactor="1.06" vaporized=""/>
+    <tripinfo id="flow2.0" depart="10.00" departLane="1to2_1" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="86.00" arrivalLane="2to3_1" arrivalPos="489.33" arrivalSpeed="22.04" duration="76.00" routeLength="1487.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="19.41" rerouteNo="0" devices="tripinfo_flow2.0" vType="Truck" speedFactor="1.01" vaporized=""/>
+    <tripinfo id="flow1.1" depart="20.00" departLane="1to2_0" departPos="4.60" departSpeed="0.00" departDelay="0.00" arrival="104.00" arrivalLane="2to3_0" arrivalPos="489.33" arrivalSpeed="14.65" duration="84.00" routeLength="1495.40" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="14.90" rerouteNo="0" devices="tripinfo_flow1.1" vType="Car" speedFactor="1.08" vaporized=""/>
+    <tripinfo id="flow2.1" depart="35.00" departLane="1to2_1" departPos="12.10" departSpeed="0.00" departDelay="0.50" arrival="114.00" arrivalLane="2to3_1" arrivalPos="489.33" arrivalSpeed="22.39" duration="79.00" routeLength="1487.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="18.30" rerouteNo="0" devices="tripinfo_flow2.1" vType="Truck" speedFactor="1.03" vaporized=""/>
+    <tripinfo id="flow3.0" depart="50.00" departLane="1to2_2" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="120.00" arrivalLane="2to3_2" arrivalPos="489.33" arrivalSpeed="28.77" duration="70.00" routeLength="1487.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="23.88" rerouteNo="0" devices="tripinfo_flow3.0" vType="Bus" speedFactor="1.05" vaporized=""/>
+</tripinfos>

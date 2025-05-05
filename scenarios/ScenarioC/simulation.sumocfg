@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-12-17 17:34:09 by Eclipse SUMO sumo Version 1.21.0
+-->
+
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="hdmf.net.xml"/>
+        <route-files value="hdhf.rou.xml"/>
+        <gui-settings-file value="settings.xml"/>
+        <additional-files value="hdmf.add.xml"/>
+    </input>
+
+    <output>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="500"/>
+    </time>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+    <lateral-resolution value="0.8"/>
+
+</sumoConfiguration>
