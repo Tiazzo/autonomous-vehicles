@@ -63,5 +63,5 @@ Scenario C Demo Video
 ## For detailed methodology and evaluation:
 A Comparative Study of Rule-Based and Machine Learning Models for Lane-Change Decision-Making in Autonomous Vehicles
 
-Read the full report](LaneChange_Paper.pdf)
+[Read the full project report (PDF)](./LaneChange_Paper.pdf)
 
