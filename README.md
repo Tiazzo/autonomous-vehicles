@@ -54,12 +54,6 @@ This project was developed as part of Autonomous and cooperative vehicular syste
 
 ---
 
-## Demo
-Watch the demo video of the simulation under heavy traffic:
-Scenario C Demo Video
-
----
-
 ## For detailed methodology and evaluation:
 A Comparative Study of Rule-Based and Machine Learning Models for Lane-Change Decision-Making in Autonomous Vehicles
 
